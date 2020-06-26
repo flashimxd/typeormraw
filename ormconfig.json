@@ -1,0 +1,19 @@
+{
+  "type": "mongodb",
+  "url": "mongodb+srv://paloma:<palomadb>@cluster0-lb9qj.mongodb.net/doitcourses?retryWrites=true&w=majority",
+  "ssl": true,
+  "authSource": "admin",
+  "replicaSet": "TestCluster0-shard-0",
+  "synchronize": "true",
+  "useNewUrlParser": "false",
+  "logging": "true",
+  "entities": [
+    "./src/models/*.ts"
+  ],
+  "migrations": [
+    "./src/database/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
+}
